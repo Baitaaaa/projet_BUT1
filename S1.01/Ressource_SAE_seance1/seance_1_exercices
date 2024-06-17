@@ -1,0 +1,18 @@
+Exercice 1 :
+
+- identifiant et mot de passe correctent
+- identifiant inexistant et mot de passe correct
+- identifiant correct et mot de passe inexistant
+- identifiant correct et mauvais mot de passe mais existant 
+- identifiant mais pas de mot de passe
+- mot de passe mais pas d'identifiant
+- pas d'identifiant ni de mot de passe
+- mot de passe et injection de code
+- identifiant correct et mot de passe trop long
+- identifiant correct mais en majuscule et bon mot de passe
+- identifiant et mot de passe correct mais utilisateur déjà connecté
+- connexions répétes(spam)
+
+Exercice 2 :
+
+

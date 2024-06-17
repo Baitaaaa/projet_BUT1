@@ -1,0 +1,23 @@
+programme sudoku c'est
+
+constante entier FIN := 1 ;
+
+type tableau = tableau[9][9] de entier
+
+debut
+	verifier : entier ;
+	grille , grilleModifiee : tableau ;
+	
+	grille := ... ;
+	
+	afficherGrille(entF grille) ;
+	grilleModifiee := remplirGrille(entF grille) ;
+	verifier = verifierSudoku(entF grilleModifiee);
+	
+	tant que (verifier != FIN) faire
+		afficherGrille(entF grilleModifiee) ;
+		grilleModifiee := remplirGrille(entF grille) ;
+		verifier = verifierSudoku(entF grilleModifiee) ;
+	finFaire
+
+fin 

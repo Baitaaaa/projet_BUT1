@@ -1,0 +1,146 @@
+procedure : afficheGrille
+affiche la grille et son contenu
+
+parametres :
+- grilleModifiee(entrée): chaine de caractere
+
+resultat :
+affichage de la grille et son contenu
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+fonction : remplirGrille 
+demande et rentre le nombre dans la grille et renvoie la nouvelle grille
+
+parametres :
+- grille(entrée): chaine de caractere
+
+resultat :
+chaine de caractere, nouvelle grille
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+fonction : verifierColonne
+vérifie la colonne de la case concerné
+
+parametres : 
+- grille(entrée) : chaine de caractere
+- coordonee(entrée) : chaine de caractere
+
+résultat :
+entier, 1 si colonne bonne 0 sinon
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+fonction : verifierLigne
+verifie la ligne de la case concerné
+
+parametres :
+- grille(entrée) : chaine de caractere
+- coordonee(entrée) : chaine de caractere
+
+résultat :
+entier, 1 si ligne bonne 0 sinon
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+fonction : saisisCase
+permet la saisie d'une case et verifie si la case existe
+
+parametres : 
+
+resultat : 
+chaine de caractere, case entrée
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+fonction : verifierNombre
+verifie si le nombre est possible
+
+parametres : 
+- nombre(entrée) : entier
+
+resultat : 
+entier, 1 si numero bon 0 sinon
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+fonction : saisirOption
+permet la saisie d'une option et verifie si elle existe
+
+parametres : 
+
+resultat : 
+entier, 1 pour remplacer, 2 pour ajouter et 0 si invalide
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+fonction : verifCasePrerempli
+permet de vérifier si la case est une case pré-rempli
+
+parametres : 
+- coordonnee(entrée): chaine de caractere
+
+resultat : 
+entier, 0 si c'est bon 1 sinon
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+procedure : ajouterNombre
+permet d'ajouter un nombre dans la grille
+
+parametres : 
+- grille(entrée/sortie) : chaine de caractere
+
+resultat :
+ajoute un nombre dans la grille
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+procedure : remplacerNombre
+permet de remplacer nombre dans la grille
+
+parametres : 
+- grille(entrée/sortie) : chaine de caractere
+
+resultat : 
+remplace un nombre dans la grille
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+fonction : convertirX
+permet de convertir le x (la lettre) des coordonnées entrée en coordonnée valide pour le tabeau
+
+parametres : 
+- coordonnee(entrée): chaine de caractere
+
+resultat : 
+entier
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+fonction : convertirY
+permet de convertir le Y (le chiffre) des coordonnées entrée en coordonnée valide pour le tabeau
+
+parametres : 
+- coordonnee(entrée): chaine de caractere
+
+resultat : 
+entier
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+fonction : verifierSudoku
+verifie si le sudoku est fini ou pas
+
+parametres : 
+- grille(entrée/sortie) : chaine de caractere
+
+resultat : 
+entier, 1 si oui et 0 si non
+
+
+
+
+
+

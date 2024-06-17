@@ -1,0 +1,190 @@
+\hypertarget{main_8c}{}\doxysection{Référence du fichier main.\+c}
+\label{main_8c}\index{main.c@{main.c}}
+
+
+Programme pour jouer à un jeu de Sudoku.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+Graphe des dépendances par inclusion de main.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8c_a7b29335add3a553ed85d0e3ace85629c}{TAILLE}}~9
+\end{DoxyCompactItemize}
+\doxysubsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+typedef int \mbox{\hyperlink{main_8c_afa9b074d40871ca2cad69d9cb196d942}{t\+\_\+grille}}\mbox{[}\mbox{\hyperlink{main_8c_a7b29335add3a553ed85d0e3ace85629c}{TAILLE}}\mbox{]}\mbox{[}\mbox{\hyperlink{main_8c_a7b29335add3a553ed85d0e3ace85629c}{TAILLE}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Tableau deux dimension de taille TAILLE. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8c_ab90e1674906c921e966da4e373267e63}{afficher\+Grille}} (\mbox{\hyperlink{main_8c_afa9b074d40871ca2cad69d9cb196d942}{t\+\_\+grille}})
+\begin{DoxyCompactList}\small\item\em Affiche une grille de Sudoku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_acbd8cc58549308b2c7bdd059f2793c20}{charger\+Grille}} (\mbox{\hyperlink{main_8c_afa9b074d40871ca2cad69d9cb196d942}{t\+\_\+grille}})
+\begin{DoxyCompactList}\small\item\em Charge une grille de Sudoku à partir d\textquotesingle{}un fichier. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8c_ab4313272c02570652f08ec56f73d6a77}{grille\+Pleine}} (\mbox{\hyperlink{main_8c_afa9b074d40871ca2cad69d9cb196d942}{t\+\_\+grille}})
+\begin{DoxyCompactList}\small\item\em Vérifie si la grille est pleine. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Programme principal. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{main_8c_a48be57b347f86884a67b2b94bdb24a12}{possible}} (\mbox{\hyperlink{main_8c_afa9b074d40871ca2cad69d9cb196d942}{t\+\_\+grille}}, int, int, int)
+\begin{DoxyCompactList}\small\item\em Vérifie si une valeur peut être insérée dans une position donnée de la grille. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_a4ddef467d70df44dc4af777a9e9f1737}{saisir}} (int $\ast$)
+\begin{DoxyCompactList}\small\item\em Saisit un entier entre 1 et 9. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Programme pour jouer à un jeu de Sudoku. 
+
+\begin{DoxyAuthor}{Auteur}
+LAÎ\+NÉ Baptiste 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+26 novembre 2023
+\end{DoxyDate}
+Ce programme permet de jouer à un jeu de sudoku en important des grilles de fichiers 
+
+\doxysubsection{Documentation des macros}
+\mbox{\Hypertarget{main_8c_a7b29335add3a553ed85d0e3ace85629c}\label{main_8c_a7b29335add3a553ed85d0e3ace85629c}} 
+\index{main.c@{main.c}!TAILLE@{TAILLE}}
+\index{TAILLE@{TAILLE}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{TAILLE}{TAILLE}}
+{\footnotesize\ttfamily \#define TAILLE~9}
+
+
+
+\doxysubsection{Documentation des définitions de type}
+\mbox{\Hypertarget{main_8c_afa9b074d40871ca2cad69d9cb196d942}\label{main_8c_afa9b074d40871ca2cad69d9cb196d942}} 
+\index{main.c@{main.c}!t\_grille@{t\_grille}}
+\index{t\_grille@{t\_grille}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{t\_grille}{t\_grille}}
+{\footnotesize\ttfamily t\+\_\+grille}
+
+
+
+Tableau deux dimension de taille TAILLE. 
+
+Grille pour représenter la grille de sudoku 
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{main_8c_ab90e1674906c921e966da4e373267e63}\label{main_8c_ab90e1674906c921e966da4e373267e63}} 
+\index{main.c@{main.c}!afficherGrille@{afficherGrille}}
+\index{afficherGrille@{afficherGrille}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{afficherGrille()}{afficherGrille()}}
+{\footnotesize\ttfamily void afficher\+Grille (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{main_8c_afa9b074d40871ca2cad69d9cb196d942}{t\+\_\+grille}}}]{grille }\end{DoxyParamCaption})}
+
+
+
+Affiche une grille de Sudoku. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em grille} & La grille à afficher.\\
+\hline
+\end{DoxyParams}
+Affiche la grille en parcourant chaques valeurs de la grille et en la remplaçant par un \char`\"{}.\char`\"{} si elle est égale à 0. Afficher les numéros de colonne
+
+Afficher le cadre supérieur de la grille
+
+Afficher la grille avec les numéros de ligne
+
+Afficher le séparateur horizontal après chaque 3 lignes\mbox{\Hypertarget{main_8c_acbd8cc58549308b2c7bdd059f2793c20}\label{main_8c_acbd8cc58549308b2c7bdd059f2793c20}} 
+\index{main.c@{main.c}!chargerGrille@{chargerGrille}}
+\index{chargerGrille@{chargerGrille}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{chargerGrille()}{chargerGrille()}}
+{\footnotesize\ttfamily void charger\+Grille (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{main_8c_afa9b074d40871ca2cad69d9cb196d942}{t\+\_\+grille}}}]{g }\end{DoxyParamCaption})}
+
+
+
+Charge une grille de Sudoku à partir d\textquotesingle{}un fichier. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em g} & La grille à charger.\\
+\hline
+\end{DoxyParams}
+Charge la grille à partir d\textquotesingle{}un fichier .sud dans un tableau de 2 dimensions, les cases vides seront représenté par un 0. \mbox{\Hypertarget{main_8c_ab4313272c02570652f08ec56f73d6a77}\label{main_8c_ab4313272c02570652f08ec56f73d6a77}} 
+\index{main.c@{main.c}!grillePleine@{grillePleine}}
+\index{grillePleine@{grillePleine}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{grillePleine()}{grillePleine()}}
+{\footnotesize\ttfamily int grille\+Pleine (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{main_8c_afa9b074d40871ca2cad69d9cb196d942}{t\+\_\+grille}}}]{grille }\end{DoxyParamCaption})}
+
+
+
+Vérifie si la grille est pleine. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em grille} & La grille de Sudoku. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la grille est pleine, 0 sinon.
+\end{DoxyReturn}
+Vérifie si la grille est pleine pour pouvoir entrer dans la boucle while dans le main en parcourant chaques valeurs de la grille pour voir si il y en a une à 0 (=case vide) \mbox{\Hypertarget{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Programme principal. 
+
+Le programme principal permet de faire le liens entre les différentes fonctions pour pouvoir jouer au sudoku \mbox{\Hypertarget{main_8c_a48be57b347f86884a67b2b94bdb24a12}\label{main_8c_a48be57b347f86884a67b2b94bdb24a12}} 
+\index{main.c@{main.c}!possible@{possible}}
+\index{possible@{possible}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{possible()}{possible()}}
+{\footnotesize\ttfamily bool possible (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{main_8c_afa9b074d40871ca2cad69d9cb196d942}{t\+\_\+grille}}}]{grille,  }\item[{int}]{num\+Ligne,  }\item[{int}]{num\+Colonne,  }\item[{int}]{valeur }\end{DoxyParamCaption})}
+
+
+
+Vérifie si une valeur peut être insérée dans une position donnée de la grille. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em grille} & La grille de Sudoku. \\
+\hline
+{\em num\+Ligne} & Numéro de ligne. \\
+\hline
+{\em num\+Colonne} & Numéro de colonne. \\
+\hline
+{\em valeur} & La valeur à vérifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+true si la valeur est possible, false sinon.
+\end{DoxyReturn}
+Vérifie si la valeur peut aller dans une case donnée avec num\+Ligne et num\+Colonne en vérifiant la colonne, la ligne et le bloc et affiche un message d\textquotesingle{}erreur qui précise où est le problème puis renvoie true ou false si la valeur rentre ou pas. Vérifier la ligne
+
+Vérifier la colonne
+
+Vérifier le bloc\mbox{\Hypertarget{main_8c_a4ddef467d70df44dc4af777a9e9f1737}\label{main_8c_a4ddef467d70df44dc4af777a9e9f1737}} 
+\index{main.c@{main.c}!saisir@{saisir}}
+\index{saisir@{saisir}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{saisir()}{saisir()}}
+{\footnotesize\ttfamily void saisir (\begin{DoxyParamCaption}\item[{int $\ast$}]{val }\end{DoxyParamCaption})}
+
+
+
+Saisit un entier entre 1 et 9. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em val} & Pointeur vers la variable où stocker la valeur saisie.\\
+\hline
+\end{DoxyParams}
+Permet de saisir un entier sous forme de chaine de caractere entre 1 et 9 puis met le nombre dans la variable val en entrée/sortie si il est convertible en entier Nettoyer le tampon d\textquotesingle{}entrée en cas d\textquotesingle{}erreur
